@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="logo2.ico">
+
+    <!-- Local Stylesheets -->
+    <link rel="stylesheet" href="public/index.css">
+
+    <!-- Hosted Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+
+    <!-- Hosted Stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i|Raleway:400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav id="sidenav">
+        <span id="closeNav">&times;</span>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="shell.html">Shell</a></li>
+            <li>
+                <div class="social">
+                    <a href="https://github.com/reichman2"><i class="mdi mdi-github-circle"></i></a>
+                    <a href="https://www.instagram.com/reichman2/"><i class="mdi mdi-instagram"></i></a>
+                    <a href="https://facebook.com"><i class="mdi mdi-facebook"></i></a>
+                    <a href="https://codepen.io/reichman2"><i class="mdi mdi-codepen"></i></a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <i class="mdi mdi-menu" id="openNav"></i>
+        
+
+    <div class="cover">
+        <div class="flex">
+            <span id="intro">
+                Hi, I'm <span id="name">Brian</span>,<br />
+                Full-Stack Software Developer
+            </span>
+            <span id="myWorkBtn" class="button hollow" style="font-family: 'Raleway', Helvetica, sans-serif">Portfolio <span id="myWorkBtnArrow"><i id="myWorkBtnArrowInner" class="mdi mdi-arrow-right"></i></span></span>
+        </div>
+    </div>
+    
+    <div id="particles-js"></div>
+
+    <div id="content" class="content">
+        <div id="about" class="about page">
+            <span class="header flex">About</span>
+            <span class="header-bar"></span>
+            <!-- TODO about me information.  Make it interesting and nice. -->
+            <!-- <img src="about-me.jpg" id="meImg"> -->
+            <p>
+                
+            </p>
+        </div>
+
+        <div id="contact" class="contact page">
+            <span class="header flex">Contact</span>
+            <span class="header-bar"></span>
+            <!-- TODO contact form, contact info-->
+            <div class="contact-area flex">
+                <form>
+                    <div class="form-group">
+                        <input type="text" id="form-name" name="name" placeholder="Name" autocomplete="off" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" id="form-email" name="email" placeholder="Email address" autocomplete="off" required>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="form-message" name="message" placeholder="Message" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" class="button hollow">
+                    </div>
+                </form>
+            </div>
+
+            <p>
+                
+            </p>
+        </div>
+
+        <div id="portfolio" class="portfolio page">
+            <span class="header flex">Portfolio</span>
+            <span class="header-bar"></span>
+
+            <div style="margin: auto;" class="hexagon-container">
+                <div class="shapeContainer">
+                    <a href="https://github.com/reichman2"><div class="shape hexagon" style="top: 50px;"><i class="mdi mdi-github-circle"></i></div></a>
+                </div>
+
+                <div class="shapeContainer">
+                    <a href="https://bitbucket.org"><div class="shape hexagon" style="top: 50px;"><i class="mdi mdi-bitbucket"></i></div></a>
+                </div>
+
+                <!-- <div class="shapeContainer">
+                    <a href="https://github.com/reichman2"><div class="shape hexagon" style="top: 50px;"><i class="mdi mdi-github-circle"></i></div></a>
+                </div> -->
+            </div>
+            <!-- TODO: Carousel of projects -->
+        </div>
+
+        <footer>
+            <!-- <span style="color: white; width: 90vw; text-align: center; position: absolute; max-width: 100%;">bigfuck</span> -->
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="public/particles/particles.min.js"></script>
+    <script type="text/javascript" src="public/particles/app.js"></script>
+    <script type="text/javascript" src="public/scripts/index.js"></script>
+</body>
+</html>
